@@ -1,5 +1,5 @@
 {
-    "name": "MainInputSystem",
+    "name": "InputSystem",
     "maps": [
         {
             "name": "Player",

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace TheHollowSpark
 {
@@ -8,24 +7,24 @@ namespace TheHollowSpark
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private float _moveSpeed;
         
-        private MainInputSystem _mainInputSystem;
+        private InputSystem _inputSystem;
         private Vector2 _moveInput = Vector2.zero;
 
         private void Awake()
         {
-            _mainInputSystem = new MainInputSystem();
+            _inputSystem = new InputSystem();
 
-            _mainInputSystem.Player.Move.performed += ctx => 
+            _inputSystem.Player.Move.performed += ctx => 
                 _moveInput = ctx.ReadValue<Vector2>();
             
-            _mainInputSystem.Player.Move.canceled += ctx => 
+            _inputSystem.Player.Move.canceled += ctx => 
                 _moveInput = Vector2.zero;
 
         }
         
-        private void OnEnable() => _mainInputSystem.Enable();
+        private void OnEnable() => _inputSystem.Enable();
         
-        private void OnDisable() => _mainInputSystem.Disable();
+        private void OnDisable() => _inputSystem.Disable();
 
         private void Update()
         {

@@ -1,0 +1,17 @@
+{
+    "name": "ColdWind.TheHollowSpark",
+    "rootNamespace": "TheHollowSpark",
+    "references": [
+        "GUID:f56aa40c2681c1e45b844fbdf3a2d959",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

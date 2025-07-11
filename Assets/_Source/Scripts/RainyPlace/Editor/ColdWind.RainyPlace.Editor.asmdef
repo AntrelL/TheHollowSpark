@@ -1,0 +1,18 @@
+{
+    "name": "ColdWind.RainyPlace.Editor",
+    "rootNamespace": "RainyPlace.Editor",
+    "references": [
+        "GUID:f56aa40c2681c1e45b844fbdf3a2d959"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

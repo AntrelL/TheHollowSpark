@@ -1,9 +1,7 @@
 {
-    "name": "ColdWind.TheHollowSpark",
-    "rootNamespace": "TheHollowSpark",
-    "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c"
-    ],
+    "name": "ColdWind.RainyPlace",
+    "rootNamespace": "RainyPlace",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
