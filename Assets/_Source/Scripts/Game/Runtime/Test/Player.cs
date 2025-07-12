@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using Mirror;
+using UnityEngine;
 
 namespace TheHollowSpark
 {
-    public class Player : MonoBehaviour
+    public class Player : NetworkBehaviour
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private float _moveSpeed;
@@ -28,6 +29,9 @@ namespace TheHollowSpark
 
         private void Update()
         {
+            if (!isLocalPlayer)
+                return;
+            
             Vector3 moveDirection = new Vector3(_moveInput.x, 0, _moveInput.y).normalized;
             _rigidbody.MovePosition(_rigidbody.position + moveDirection * (_moveSpeed * Time.fixedDeltaTime));
         }
